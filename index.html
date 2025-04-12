@@ -1,125 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cheng Chak Yuen - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <!-- Particle Background -->
     <div id="particles-js"></div>
 
     <!-- Navigation Bar -->
     <nav>
-        <ul>
-            <li><a href="#about" class="scroll-to">About</a></li>
-            <li><a href="#skills" class="scroll-to">Skills</a></li>
-            <li><a href="#projects" class="scroll-to">Projects</a></li>
-            <li><a href="#experience" class="scroll-to">Experience</a></li>
-        </ul>
+      <ul>
+        <li><a href="#about" class="scroll-to">About</a></li>
+        <li><a href="#skills" class="scroll-to">Skills</a></li>
+        <li><a href="#projects" class="scroll-to">Projects</a></li>
+        <li><a href="#experience" class="scroll-to">Experience</a></li>
+      </ul>
     </nav>
 
     <!-- Header -->
     <header>
-        <div class="hero">
-            <h1 class="pulse">Cheng Chak Yuen</h1>
-            <p class="typewriter">AI & Cybersecurity Enthusiast</p>
-        </div>
+      <div class="hero">
+        <h1 class="pulse">Cheng Chak Yuen</h1>
+        <p class="typewriter">AI & Cybersecurity Enthusiast</p>
+      </div>
     </header>
 
     <!-- About Section -->
     <section id="about" class="parallax">
-        <div class="content">
-            <h2>About Me</h2>
-            <p class="intro">A passionate Computer Science student seeking opportunities to apply AI and cybersecurity expertise in innovative tech solutions.</p>
-            <div class="about-grid">
-                <div class="about-item">
-                    <h3>Education</h3>
-                    <p><strong>Bachelor of Engineering in Computer Science</strong><br>
-                       The University of Hong Kong (2022-2026)<br>
-                       CGPA: 3.46/4.30<br>
-                       Specializations: Artificial Intelligence, Cybersecurity</p>
-                </div>
-                <div class="about-item">
-                    <h3>Hobbies</h3>
-                    <p>I enjoy staying active and exploring new challenges:<br>
-                       - Hiking: Conquering peaks like Lion Rock.<br>
-                       - Badminton: Playing competitively with friends.</p>
-                </div>
-            </div>
+      <div class="content">
+        <h2>About Me</h2>
+        <p class="intro">
+          A passionate Computer Science student seeking opportunities to apply
+          AI and cybersecurity expertise in innovative tech solutions.
+        </p>
+        <div class="about-container">
+          <div class="about-item">
+            <h3>Education</h3>
+            <p>
+              <strong>Bachelor of Engineering in Computer Science</strong><br />
+              The University of Hong Kong (2022-2026)<br />
+              Specializations: Artificial Intelligence, Cybersecurity
+            </p>
+          </div>
+          <div class="about-item">
+            <h3>Hobbies</h3>
+            <p>
+              I enjoy staying active and exploring new challenges:<br />
+              - Hiking: Conquering peaks like Lion Rock.<br />
+              - Badminton: Playing competitively with friends.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills">
-        <h2>Tech Skills</h2>
-        <div class="skills-container">
-            <div class="skill-card" style="--delay: 0s">Python</div>
-            <div class="skill-card" style="--delay: 0.2s">Java</div>
-            <div class="skill-card" style="--delay: 0.4s">C++</div>
-            <div class="skill-card" style="--delay: 0.6s">C</div>
-            <div class="skill-card" style="--delay: 0.8s">HTML</div>
-            <div class="skill-card" style="--delay: 1.0s">CSS</div>
-            <div class="skill-card" style="--delay: 1.2s">MySQL</div>
-            <div class="skill-card" style="--delay: 1.4s">Django</div>
-            <div class="skill-card" style="--delay: 1.6s">PowerAutomate</div>
-        </div>
+      <h2>Tech Skills</h2>
+      <div class="skills-container">
+        <div class="skill-card" style="--delay: 0s">Python</div>
+        <div class="skill-card" style="--delay: 0.2s">Java</div>
+        <div class="skill-card" style="--delay: 0.4s">C++</div>
+        <div class="skill-card" style="--delay: 0.6s">C</div>
+        <div class="skill-card" style="--delay: 0.8s">HTML</div>
+        <div class="skill-card" style="--delay: 1s">CSS</div>
+        <div class="skill-card" style="--delay: 1.2s">MySQL</div>
+        <div class="skill-card" style="--delay: 1.4s">Django</div>
+        <div class="skill-card" style="--delay: 1.6s">PowerAutomate</div>
+      </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="parallax">
-        <div class="content">
-            <h2>Key Projects</h2>
-            <div class="project-grid">
-                <a href="https://github.com/Qiancheng-Hao/Image-Classification" target="_blank" class="project-card">
-                    <h3>Image Classification</h3>
-                    <p>SVM model, 75% accuracy on 100k+ images.</p>
-                </a>
-                <a href="https://github.com/Anderson-ops-oss/MTR-navigation-System" target="_blank" class="project-card">
-                    <h3>MTR Navigation</h3>
-                    <p>Python-based shortest path and lowest cost path algorithm</p>
-                </a>
-                <a href="https://github.com/Anderson-ops-oss/Huffman-code" target="_blank" class="project-card">
-                    <h3>CTF Crypto Solver</h3>
-                    <p>Python scripts for decoding and encoding Huffman challenges.</p>
-                </a>
-                <a href="https://github.com/Anderson-ops-oss/F7day" target="_blank" class="project-card"> 
-                    <h3>F7day</h3>
-                    <p>Web-based platform for searching the CG of the game</p>
-                </a>
-            </div>
+      <div class="content">
+        <h2>Key Projects</h2>
+        <div class="project-container">
+          <a
+            href="https://github.com/Qiancheng-Hao/Image-Classification"
+            target="_blank"
+            class="project-card"
+          >
+            <span class="lang-tag">Python</span>
+            <h3>Image Classification</h3>
+            <p>SVM model, 75% accuracy on 50k+ images.</p>
+            <p>CNN model, 92% accuracy on 50K+ iamges</p>
+          </a>
+          <a
+            href="https://github.com/Anderson-ops-oss/MTR-navigation-System"
+            target="_blank"
+            class="project-card"
+          >
+            <span class="lang-tag">Python</span>
+            <h3>MTR Navigation</h3>
+            <p>Python-based shortest path and lowest cost path algorithm.</p>
+          </a>
+          <a
+            href="https://github.com/Anderson-ops-oss/Huffman-code"
+            target="_blank"
+            class="project-card"
+          >
+            <span class="lang-tag">Python</span>
+            <h3>CTF Crypto Solver</h3>
+            <p>Python scripts for decoding and encoding Huffman challenges.</p>
+          </a>
+          <a
+            href="https://github.com/Anderson-ops-oss/F7day"
+            target="_blank"
+            class="project-card"
+          >
+            <span class="lang-tag">HTML, CSS, JavaScript</span>
+            <h3>F7 day</h3>
+            <p>Web-based platform for searching the CG of the game.</p>
+          </a>
+          <a
+            href="https://github.com/Anderson-ops-oss/Big-Two-Game"
+            target="_blank"
+            class="project-card"
+          >
+            <span class="lang-tag">Java</span>
+            <h3>Big Two Game</h3>
+            <p> A multiplayer card game implemented in Java, enabling players to compete online. </p>
+          </a>
+          <a
+            href="https://github.com/Qiancheng-Hao/Image-Classification"
+            target="_blank"
+            class="project-card"
+          >
+            <span class="lang-tag">Python</span>
+            <h3>Automated Facility Booking System</h3>
+            <p>Automates the process of booking study rooms at a library using Selenium for web automation</p>
+          </a>
         </div>
+      </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience-grid">
-            <div class="exp-card">
-                <h3>Ricoh Hong Kong | IT Trainee (2023-2024)</h3>
-                <p>Automated workflows using Power Automate, reducing manual tasks by 27% and saving 5 hours/week for the finance team.</p>
-            </div>
-            <div class="exp-card">
-                <h3>Cyber Security CTF | Team Leader (2022-2024)</h3>
-                <p>Led team in cybersecurity competitions, enhancing skills in cryptography.</p>
-            </div>
-            <div class="exp-card">
-                <h3>Magnetohydrodynamics Research | Research Assistant (2022-2023)</h3>
-                <p>Improved brain-computer interface signal accuracy by 15% through material testing.</p>
-            </div>
+      <h2>Experience</h2>
+      <div class="experience-grid">
+        <div class="exp-card">
+          <h3>Ricoh Hong Kong | IT Trainee (2023-2024)</h3>
+          <p>
+            Automated workflows using Power Automate, reducing manual tasks by
+            27% and saving 5 hours/week.
+          </p>
         </div>
+        <div class="exp-card">
+          <h3>Cyber Security CTF | Team Leader (2022-2024)</h3>
+          <p>
+            Led team in cybersecurity competitions, enhancing skills in
+            cryptography.
+          </p>
+        </div>
+        <div class="exp-card">
+          <h3>
+            Magnetohydrodynamics Research | Research Assistant (2022-2023)
+          </h3>
+          <p>
+            Improved brain-computer interface signal accuracy by 15% through
+            material testing.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>Contact: <a href="mailto:u3606584@connect.hku.hk">u3606584@connect.hku.hk</a> | +852 55143732<br>
-           <a href="https://github.com/Anderson-ops-oss" target="_blank">GitHub</a></p>
+      <p>
+        Contact:
+        <a href="mailto:u3606584@connect.hku.hk">u3606584@connect.hku.hk</a> |
+        +852 55143732<br />
+        <a href="https://github.com/Anderson-ops-oss" target="_blank">GitHub</a>
+      </p>
     </footer>
 
     <!-- External Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
