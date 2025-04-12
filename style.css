@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 
 body {
@@ -58,7 +58,7 @@ header {
 
 .hero h1 {
     font-family: 'Orbitron', sans-serif;
-    font-size: 4rem;
+    font-size: 4.5rem;
     margin-bottom: 20px;
 }
 
@@ -97,49 +97,88 @@ h2 {
     background: rgba(13, 13, 26, 0.8);
     padding: 40px;
     border-radius: 15px;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
-.btn {
-    display: inline-block;
-    padding: 12px 30px;
-    background: #00ffcc;
-    color: #0d0d1a;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: transform 0.3s, box-shadow 0.3s;
+/* About Section */
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+    line-height: 1.8;
 }
 
-.btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 15px #00ffcc;
-}
-
-/* About Grid */
-.about-grid {
+.about-container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-top: 20px;
 }
 
 .about-item {
     background: #1a1a3d;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
     transition: transform 0.3s;
 }
 
 .about-item:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
 }
 
-.intro {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.1rem;
+.about-item h3 {
+    margin-bottom: 15px;
+    color: #00ffcc;
+}
+
+.about-item p {
+    line-height: 1.6;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-card {
+    background: #1a1a3d;
+    padding: 15px 25px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    animation: slideIn 0.5s ease forwards var(--delay);
+}
+
+/* Projects Section */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: #1a1a3d;
+    padding: 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+}
+
+.project-card h3 {
+    margin-bottom: 15px;
+    color: #00ffcc;
+}
+
+.project-card p {
+    line-height: 1.6;
 }
 
 /* Experience Section */
@@ -163,42 +202,30 @@ h2 {
     box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
 }
 
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.skill-card {
-    background: #1a1a3d;
-    padding: 15px 25px;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    animation: slideIn 0.5s ease forwards var(--delay);
-}
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-
+/* Project Language Tag */
 .project-card {
+    position: relative; 
     background: #1a1a3d;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
     text-decoration: none;
     color: #fff;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+.lang-tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #00ffcc;
+    color: #0d0d1a;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    font-family: 'Roboto Mono', monospace;
 }
 
-
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
@@ -209,6 +236,76 @@ footer a {
     color: #00ffcc;
     text-decoration: none;
     margin: 0 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        gap: 15px;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .typewriter {
+        font-size: 1.2rem;
+    }
+
+    section {
+        padding: 40px 10px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .about-container, .project-container, .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skill-card {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .project-card {
+        padding: 20px;
+    }
+
+    .lang-tag {
+        font-size: 0.8rem;
+        padding: 4px 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .typewriter {
+        font-size: 1rem;
+    }
+
+    .intro {
+        font-size: 1rem;
+    }
+
+    .lang-tag {
+        font-size: 0.7rem;
+        padding: 3px 6px;
+    }
 }
 
 /* Animations */
